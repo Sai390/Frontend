@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <body>
+        First name:<br>
+        <input type="text" name="firstname" id='firstname'>
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" id='lastname'>
+        <br>
+        <input type="button" value="Send" onclick="myFunction()">
+        <div id="here">
+
+        </div>    
+
+ <script>
+    myFunction = function() {
+    var first = document.getElementById("firstname").value;
+    var second = document.getElementById("lastname").value;
+    
+    document.getElementById("here").innerHTML = first+" "+second;
+}
+ </script>
+ </body> 
+ </html>
+ 

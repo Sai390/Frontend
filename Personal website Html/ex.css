@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+
+.example
+{
+    background-color: cyan;
+    width: 50cm;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+}
+
+header * {
+    display: inline;
+    height: 50px;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    margin-left: 20px;
+}
+
+section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+        background-attachment: fixed; 
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+}
+
+#one h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Add everything below here */
+
+#one {
+    background-image: linear-gradient(rgba(134, 132, 132, 0.75),rgba(87, 84, 84, 0.75)), url('https://images7.alphacoders.com/125/1259055.jpg');
+}
+
+#two {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images7.alphacoders.com/838/838168.jpg');
+}
+
+#three {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://images7.alphacoders.com/838/838168.jpg');
+}

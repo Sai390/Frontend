@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+    <script>  function getFormvalue() {
+        var first = document.getElementById("firstname").value;
+        var second = document.getElementById("lastname").value;
+        
+        document.getElementById("here").innerHTML = first+" "+second;
+    }
+     </script>
+</head>
+<body>
+<form id="form1" onsubmit="getFormvalue()"> 
+    First name: <input type="text" name="fname" value="David"><br>
+Last name: <input type="text" name="lname" value="Beckham"><br> 
+<input type="submit" value="Submit"> 
+
+</form> 
+
+
+</body> 
+</html>
