@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <script src="form.js"></script>
+</head>
+<style>
+    .abc{
+        background-image:url("https://media.istockphoto.com/photos/round-podium-or-pedestal-with-green-background-picture-id1337639487?b=1&k=20&m=1337639487&s=170667a&w=0&h=mKhwSI2_lCAm5XX9pV8Mdp9SSeIp-PXLzxA8j34mHIE=");
+        font-size: medium;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-style: italic;
+        
+    }
+    .acd
+    {
+        background-color: cyan;
+        width: 200px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    
+    }
+    @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  .a
+  {
+   background-color: aqua; 
+  }
+</style>
+<body class="a">
+    <marquee direction="left" scrollamount="20" > <h1 class="acd" align="center">Register</h1></marquee>
+    <form class="abc" name="RegForm" onsubmit="form()" method="post" align="center">
+
+        <p>Name: <input type="text" size="50" name="Name" /></p>
+
+        <br />
+
+        <p>Address: <input type="text" size="50" name="Address" />
+        </p>
+
+        <br />
+
+        <p>E-mail: <input type="text" size="50" name="EMail" /></p>
+
+        <br />
+
+        <p>Password: <input type="text" size="50" name="Password" /></p>
+
+        <br />
+
+        <p>Telephone: <input type="text" size="50" name="Telephone" /></p>
+
+        <br />
+
+
+        <p>
+            SELECT YOUR COURSE
+            <select type="text" value="" name="Subject">
+                <option>BTECH</option>
+                <option>BBA</option>
+                <option>BCA</option>
+                <option>B.COM</option>
+            </select>
+        </p>
+        <br />
+        <br />
+
+        <p>Comments: <textarea cols="50" rows="5" name="Comment"> </textarea></p>
+
+
+        <p>
+            <input type="submit" value="submit" name="Submit" />
+            <input type="reset" value="Reset" name="Reset" />
+        </p>
+
+    </form>
+</body>
+
+</html>
